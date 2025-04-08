@@ -13,9 +13,9 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 os.environ["LOKY_MAX_CPU_COUNT"] = "4"  # Adjust to match CPU core count
 
 # Load datasets
-train_data = pd.read_csv(r'C:\Users\main\OneDrive\Documents\ddos cloud flood\datset\modified\Syn-training-balanced.csv')
-#test_data = pd.read_csv(r'C:\Users\main\OneDrive\Documents\ddos cloud flood\datset\modified\Syn-testing.csv')
-test_data = pd.read_csv(r'C:\Users\main\Downloads\Syn-testing-hard.csv')
+train_data = pd.read_csv(r"C:\Users\main\OneDrive\Documents\16\program related stuff\modified\Syn-training-balanced.csv")
+test_data = pd.read_csv(r"C:\Users\main\OneDrive\Documents\16\program related stuff\modified\Noisy_Syn_Testing.csv")
+#train_data = pd.read_csv(r"C:\Users\main\Downloads\Hard-to-Detect-Syn.csv")
 
 # Analyze dataset
 print("Unique labels in training data:", train_data['Label'].unique())
